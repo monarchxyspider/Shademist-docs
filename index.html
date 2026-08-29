@@ -8,15 +8,13 @@
 
     <meta
         name="description"
-        content="ShadeMist is an advanced Discord bot built to protect, manage and enhance your community."
+        content="ShadeMist - Powerful Discord moderation and community management bot."
     >
 
     <title>ShadeMist | Discord Bot</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,7 +23,6 @@
         rel="stylesheet"
     >
 
-    <!-- Favicon -->
     <link
         rel="icon"
         href="https://cdn.discordapp.com/embed/avatars/0.png"
@@ -44,9 +41,7 @@
 <div class="animated-bg">
 
     <span class="blob blob-one"></span>
-
     <span class="blob blob-two"></span>
-
     <span class="blob blob-three"></span>
 
 </div>
@@ -62,7 +57,7 @@
     <nav class="navbar">
 
 
-        <!-- BRAND -->
+        <!-- LOGO -->
 
         <a href="index.html" class="logo">
 
@@ -72,7 +67,7 @@
 
 
 
-        <!-- DESKTOP NAVIGATION -->
+        <!-- DESKTOP LINKS -->
 
         <div class="nav-links">
 
@@ -104,8 +99,6 @@
         <div class="nav-right">
 
 
-            <!-- INVITE -->
-
             <a
                 href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
                 class="nav-invite"
@@ -117,7 +110,7 @@
 
 
 
-            <!-- HAMBURGER -->
+            <!-- THREE LINES -->
 
             <button
                 class="menu-toggle"
@@ -128,9 +121,7 @@
             >
 
                 <span></span>
-
                 <span></span>
-
                 <span></span>
 
             </button>
@@ -150,8 +141,7 @@
         id="mobileMenu"
     >
 
-
-        <div class="mobile-menu-header">
+        <div class="mobile-menu-title">
 
             <span>
                 ShadeMist
@@ -160,7 +150,6 @@
             <button
                 id="menuClose"
                 type="button"
-                aria-label="Close Menu"
             >
                 ×
             </button>
@@ -169,65 +158,33 @@
 
 
 
-        <div class="mobile-menu-links">
+        <div class="mobile-links">
 
 
             <a
                 href="index.html"
-                class="mobile-link active"
+                class="active"
             >
-
-                <span class="menu-symbol">
-                    ⌂
-                </span>
-
+                <span>⌂</span>
                 Home
-
             </a>
 
 
-
-            <a
-                href="docs.html"
-                class="mobile-link"
-            >
-
-                <span class="menu-symbol">
-                    ◈
-                </span>
-
+            <a href="docs.html">
+                <span>◈</span>
                 Bot Docs
-
             </a>
 
 
-
-            <a
-                href="commands.html"
-                class="mobile-link"
-            >
-
-                <span class="menu-symbol">
-                    ⌘
-                </span>
-
+            <a href="commands.html">
+                <span>⌘</span>
                 Commands
-
             </a>
 
 
-
-            <a
-                href="updates.html"
-                class="mobile-link"
-            >
-
-                <span class="menu-symbol">
-                    ✦
-                </span>
-
+            <a href="updates.html">
+                <span>✦</span>
                 Updates
-
             </a>
 
 
@@ -235,44 +192,31 @@
 
 
 
-        <div class="mobile-menu-divider"></div>
+        <div class="mobile-divider"></div>
 
 
 
-        <div class="mobile-menu-buttons">
+        <a
+            href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
+            class="mobile-invite"
+        >
+            Invite Bot
+        </a>
 
 
-            <a
-                href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
-                class="mobile-invite"
-            >
-
-                Invite Bot
-
-            </a>
-
-
-
-            <a
-                href="https://discord.gg/54vJcse3"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mobile-support"
-            >
-
-                Support Server
-
-            </a>
-
-
-        </div>
+        <a
+            href="https://discord.gg/54vJcse3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-support"
+        >
+            Support Server
+        </a>
 
 
     </div>
 
 
-
-    <!-- MENU OVERLAY -->
 
     <div
         class="menu-overlay"
@@ -296,7 +240,7 @@
     <div class="hero-content">
 
 
-        <!-- ONLINE BADGE -->
+        <!-- STATUS -->
 
         <div class="hero-badge">
 
@@ -309,40 +253,28 @@
 
 
         <!-- ================================================= -->
-        <!-- CUSTOM BOT IMAGE -->
+        <!-- CUSTOM IMAGE AREA -->
         <!-- ================================================= -->
 
-        <!--
-            ==============================================
-            CUSTOM IMAGE PLACEHOLDER
-            ==============================================
-
-            Apni image ka URL neeche src="" mein lagana.
-
-            Example:
-
-            src="images/shademist.png"
-
-            Ya:
-
-            src="https://example.com/image.png"
-
-            ==============================================
-        -->
-
         <div class="hero-logo-wrapper">
-
 
             <div class="logo-ring"></div>
 
 
+            <!--
+                CUSTOM IMAGE
+
+                Replace only the src below.
+
+                Example:
+                src="images/shademist.png"
+            -->
 
             <img
                 src="YOUR_CUSTOM_IMAGE_HERE.png"
                 alt="ShadeMist Bot Logo"
                 class="hero-logo"
             >
-
 
         </div>
 
@@ -377,13 +309,11 @@
 
 
         <!-- ================================================= -->
-        <!-- HERO BUTTONS -->
+        <!-- BUTTONS -->
         <!-- ================================================= -->
 
         <div class="hero-buttons">
 
-
-            <!-- INVITE BOT -->
 
             <a
                 href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
@@ -411,8 +341,6 @@
             </a>
 
 
-
-            <!-- SUPPORT SERVER -->
 
             <a
                 href="https://discord.gg/54vJcse3"
@@ -446,19 +374,13 @@
 
 
 
-        <!-- TRUST -->
-
         <div class="hero-trust">
 
-            <span>
-                ✦
-            </span>
+            <span>✦</span>
 
             Built for Discord communities
 
-            <span>
-                ✦
-            </span>
+            <span>✦</span>
 
         </div>
 
@@ -475,7 +397,6 @@
 <!-- ================================================= -->
 
 <section class="stats">
-
 
     <div class="stats-container">
 
@@ -549,7 +470,6 @@
 
     </div>
 
-
 </section>
 
 
@@ -563,47 +483,38 @@
 
     <div class="section-heading">
 
-
         <span class="section-label">
             POWERFUL FEATURES
         </span>
 
-
         <h2>
             Everything your server needs.
         </h2>
-
 
         <p>
             Powerful tools designed to keep your community
             safe, organized and enjoyable.
         </p>
 
-
     </div>
 
 
 
-    <!-- ================================================= -->
-    <!-- FEATURE CARDS -->
-    <!-- ================================================= -->
-
     <div class="cards">
 
 
-        <!-- ============================================= -->
+        <!-- ================================================= -->
         <!-- MODERATION -->
-        <!-- ============================================= -->
+        <!-- ================================================= -->
 
         <div class="card">
 
-
             <div class="card-icon">
 
-                <!-- OLD IMAGE — UNCHANGED -->
+                <!-- ORIGINAL IMAGE — UNCHANGED -->
 
                 <img
-                    src="https://cdn.discordapp.com/attachments/1486740937207054449/1532740345731879042/85232-twotoneshield-ids.png?ex=6a6df32f&is=6a6ca1af&hm=b14abfd5dc7a352864a070be60fe112a4a1633c03ffdc1dc9dc1e0d4e5e4f&"
+                    src="https://cdn.discordapp.com/attachments/1486740937207054449/1532740345731879042/85232-twotoneshield-ids.png?ex=6a6df32f&is=6a6ca1af&hm=b14abfd5dc7a352864a070be60fe112a4a1633c03ffdc1dc1cd9dc1e0d4e5e4f&"
                     class="feature-icon"
                     alt="Advanced Moderation"
                 >
@@ -631,21 +542,19 @@
                 Explore Commands →
             </a>
 
-
         </div>
 
 
 
-        <!-- ============================================= -->
+        <!-- ================================================= -->
         <!-- PERFORMANCE -->
-        <!-- ============================================= -->
+        <!-- ================================================= -->
 
         <div class="card">
 
-
             <div class="card-icon">
 
-                <!-- OLD IMAGE — UNCHANGED -->
+                <!-- ORIGINAL IMAGE — UNCHANGED -->
 
                 <img
                     src="https://cdn.discordapp.com/attachments/1482397391888842844/1537716821153550386/file_000000009854821195c006e231df7fea.png?ex=6a815f63&is=6a800de3&hm=71e16cfa5e334e538a41477a07eb7e2f9c6e3e9ccc47fd385438234f3b6a8abc&"
@@ -676,21 +585,19 @@
                 Read Documentation →
             </a>
 
-
         </div>
 
 
 
-        <!-- ============================================= -->
+        <!-- ================================================= -->
         <!-- SECURITY -->
-        <!-- ============================================= -->
+        <!-- ================================================= -->
 
         <div class="card">
 
-
             <div class="card-icon">
 
-                <!-- OLD IMAGE — UNCHANGED -->
+                <!-- ORIGINAL IMAGE — UNCHANGED -->
 
                 <img
                     src="https://cdn.discordapp.com/attachments/1482397391888842844/1537716815331860490/eglock.png?ex=6a815f62&is=6a800de3&hm=c1a4ebfc807b1ca17a706af8707dc7c1d1d5d7df07940812d0b9569a4858f876&"
@@ -721,7 +628,6 @@
                 Learn More →
             </a>
 
-
         </div>
 
 
@@ -733,16 +639,13 @@
 
 
 <!-- ================================================= -->
-<!-- CALL TO ACTION -->
+<!-- CTA -->
 <!-- ================================================= -->
 
 <section class="cta">
 
 
     <div class="cta-box">
-
-
-        <div class="cta-glow"></div>
 
 
         <span class="section-label">
@@ -785,7 +688,6 @@
             </a>
 
 
-
             <a
                 href="https://discord.gg/54vJcse3"
                 target="_blank"
@@ -821,10 +723,7 @@
     <div class="footer-content">
 
 
-        <!-- BRAND -->
-
         <div class="footer-brand">
-
 
             <div class="footer-logo">
 
@@ -838,17 +737,12 @@
                 Premium experience.
             </p>
 
-
         </div>
 
 
 
-        <!-- LINKS -->
-
         <div class="footer-links">
 
-
-            <!-- NAVIGATION -->
 
             <div>
 
@@ -856,21 +750,17 @@
                     Navigation
                 </h4>
 
-
                 <a href="index.html">
                     Home
                 </a>
-
 
                 <a href="docs.html">
                     Bot Docs
                 </a>
 
-
                 <a href="commands.html">
                     Commands
                 </a>
-
 
                 <a href="updates.html">
                     Updates
@@ -880,14 +770,11 @@
 
 
 
-            <!-- COMMUNITY -->
-
             <div>
 
                 <h4>
                     Community
                 </h4>
-
 
                 <a
                     href="https://discord.gg/54vJcse3"
@@ -896,7 +783,6 @@
                 >
                     Support Server
                 </a>
-
 
                 <a
                     href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
@@ -908,19 +794,15 @@
 
 
 
-            <!-- LEGAL -->
-
             <div>
 
                 <h4>
                     Legal
                 </h4>
 
-
                 <a href="privacy.html">
                     Privacy Policy
                 </a>
-
 
                 <a href="terms.html">
                     Terms of Service
@@ -936,20 +818,15 @@
 
 
 
-    <!-- FOOTER BOTTOM -->
-
     <div class="footer-bottom">
-
 
         <p>
             © 2026 ShadeMist. All Rights Reserved.
         </p>
 
-
         <p>
             Made for Discord communities.
         </p>
-
 
     </div>
 
@@ -958,9 +835,7 @@
 
 
 
-<!-- ================================================= -->
-<!-- JAVASCRIPT -->
-<!-- ================================================= -->
+<!-- JS -->
 
 <script src="script.js"></script>
 
