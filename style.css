@@ -37,56 +37,55 @@ button {
 .animated-bg {
     position: fixed;
     inset: 0;
+
     width: 100%;
     height: 100%;
+
     overflow: hidden;
+
     pointer-events: none;
+
     z-index: -10;
 
     background:
         radial-gradient(
             circle at 15% 15%,
-            rgba(255, 25, 70, 0.16),
-            transparent 32%
-        ),
-        radial-gradient(
-            circle at 85% 65%,
-            rgba(190, 0, 45, 0.13),
+            rgba(255, 30, 70, .16),
             transparent 34%
         ),
         radial-gradient(
-            circle at 50% 100%,
-            rgba(255, 30, 75, 0.08),
-            transparent 35%
+            circle at 85% 65%,
+            rgba(180, 0, 40, .13),
+            transparent 34%
         ),
         #070707;
 }
 
 .animated-bg::after {
     content: "";
+
     position: absolute;
     inset: 0;
 
     background:
         linear-gradient(
-            rgba(255, 255, 255, 0.015) 1px,
+            rgba(255,255,255,.012) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255, 255, 255, 0.015) 1px,
+            rgba(255,255,255,.012) 1px,
             transparent 1px
         );
 
     background-size: 55px 55px;
 
-    mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 85%
-    );
-
-    pointer-events: none;
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent 90%
+        );
 }
 
 .blob {
@@ -99,9 +98,7 @@ button {
 
     filter: blur(100px);
 
-    opacity: 0.28;
-
-    pointer-events: none;
+    opacity: .28;
 }
 
 .blob-one {
@@ -117,7 +114,7 @@ button {
 .blob-two {
     background: #a8002e;
 
-    top: 28%;
+    top: 30%;
     right: -200px;
 
     animation:
@@ -138,13 +135,13 @@ button {
 
     from {
         transform:
-            translate(0, 0)
+            translate(0,0)
             scale(1);
     }
 
     to {
         transform:
-            translate(240px, 190px)
+            translate(240px,190px)
             scale(1.25);
     }
 
@@ -154,13 +151,13 @@ button {
 
     from {
         transform:
-            translate(0, 0)
+            translate(0,0)
             scale(1);
     }
 
     to {
         transform:
-            translate(-220px, -150px)
+            translate(-220px,-150px)
             scale(1.3);
     }
 
@@ -170,13 +167,13 @@ button {
 
     from {
         transform:
-            translate(0, 0)
+            translate(0,0)
             scale(1);
     }
 
     to {
         transform:
-            translate(170px, -180px)
+            translate(170px,-180px)
             scale(1.2);
     }
 
@@ -199,13 +196,16 @@ header {
     z-index: 9999;
 
     background:
-        rgba(7, 7, 7, 0.72);
+        rgba(7,7,7,.72);
 
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter:
+        blur(20px);
+
+    -webkit-backdrop-filter:
+        blur(20px);
 
     border-bottom:
-        1px solid rgba(255, 255, 255, 0.07);
+        1px solid rgba(255,255,255,.07);
 }
 
 .navbar {
@@ -237,16 +237,10 @@ header {
     letter-spacing: -1px;
 
     color: #ffffff;
-
-    transition: 0.3s ease;
 }
 
 .logo span {
     color: #ff2d55;
-}
-
-.logo:hover {
-    transform: translateY(-1px);
 }
 
 
@@ -269,14 +263,14 @@ header {
 .nav-links a {
     position: relative;
 
-    color: #bcbcbc;
+    color: #a8a8a8;
 
     font-size: 14px;
 
     font-weight: 500;
 
     transition:
-        color 0.25s ease;
+        .25s ease;
 }
 
 .nav-links a::after {
@@ -290,14 +284,15 @@ header {
     width: 0;
     height: 2px;
 
-    background: #ff2d55;
-
     border-radius: 20px;
 
-    transform: translateX(-50%);
+    background: #ff2d55;
+
+    transform:
+        translateX(-50%);
 
     transition:
-        width 0.25s ease;
+        .25s ease;
 }
 
 .nav-links a:hover,
@@ -321,7 +316,7 @@ header {
 
     align-items: center;
 
-    gap: 14px;
+    gap: 13px;
 }
 
 
@@ -331,7 +326,8 @@ header {
 /* ================================================= */
 
 .nav-invite {
-    padding: 10px 19px;
+    padding:
+        10px 19px;
 
     border-radius: 9px;
 
@@ -339,28 +335,29 @@ header {
         linear-gradient(
             135deg,
             #ff315b,
-            #e9003f
+            #e80040
         );
 
     border:
-        1px solid rgba(255, 255, 255, 0.1);
+        1px solid rgba(255,255,255,.1);
 
     font-size: 13px;
 
     font-weight: 600;
 
     box-shadow:
-        0 7px 25px rgba(255, 30, 70, 0.18);
+        0 7px 25px rgba(255,30,70,.18);
 
     transition:
-        0.3s ease;
+        .3s ease;
 }
 
 .nav-invite:hover {
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 
     box-shadow:
-        0 10px 30px rgba(255, 30, 70, 0.32);
+        0 10px 30px rgba(255,30,70,.32);
 }
 
 
@@ -382,40 +379,40 @@ header {
 
     gap: 5px;
 
+    cursor: pointer;
+
     background:
-        rgba(255, 255, 255, 0.055);
+        rgba(255,255,255,.055);
 
     border:
-        1px solid rgba(255, 255, 255, 0.1);
+        1px solid rgba(255,255,255,.1);
 
     border-radius: 10px;
 
-    cursor: pointer;
-
     transition:
-        0.3s ease;
+        .3s ease;
 }
 
 .menu-toggle span {
-    display: block;
-
     width: 18px;
     height: 2px;
 
-    border-radius: 10px;
+    display: block;
 
     background: #ffffff;
 
+    border-radius: 10px;
+
     transition:
-        0.3s ease;
+        .3s ease;
 }
 
 .menu-toggle:hover {
     background:
-        rgba(255, 45, 85, 0.14);
+        rgba(255,45,85,.13);
 
     border-color:
-        rgba(255, 45, 85, 0.4);
+        rgba(255,45,85,.4);
 }
 
 
@@ -436,49 +433,51 @@ header {
     padding: 25px;
 
     background:
-        rgba(13, 13, 13, 0.96);
+        rgba(12,12,12,.97);
 
     border-left:
-        1px solid rgba(255, 255, 255, 0.08);
+        1px solid rgba(255,255,255,.08);
 
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter:
+        blur(25px);
+
+    -webkit-backdrop-filter:
+        blur(25px);
 
     z-index: 10001;
 
     transition:
-        right 0.35s cubic-bezier(.77, 0, .18, 1);
+        right .35s cubic-bezier(.77,0,.18,1);
 
     box-shadow:
-        -20px 0 70px rgba(0, 0, 0, 0.35);
+        -20px 0 70px rgba(0,0,0,.4);
 }
 
 .mobile-menu.open {
     right: 0;
 }
 
-.mobile-menu-header {
+.mobile-menu-title {
     display: flex;
 
+    align-items: center;
     justify-content: space-between;
 
-    align-items: center;
-
-    padding-bottom: 25px;
+    padding-bottom: 23px;
 
     border-bottom:
-        1px solid rgba(255, 255, 255, 0.08);
+        1px solid rgba(255,255,255,.08);
 }
 
-.mobile-menu-header span {
+.mobile-menu-title span {
+    color: #ff2d55;
+
     font-size: 22px;
 
     font-weight: 700;
-
-    color: #ff2d55;
 }
 
-.mobile-menu-header button {
+.mobile-menu-title button {
     width: 38px;
     height: 38px;
 
@@ -487,132 +486,115 @@ header {
     border-radius: 9px;
 
     background:
-        rgba(255, 255, 255, 0.06);
+        rgba(255,255,255,.06);
 
     color: #ffffff;
 
     font-size: 25px;
 
     cursor: pointer;
-
-    transition: 0.25s ease;
 }
 
-.mobile-menu-header button:hover {
-    background:
-        rgba(255, 45, 85, 0.15);
-
-    color: #ff2d55;
-}
-
-.mobile-menu-links {
+.mobile-links {
     display: flex;
 
     flex-direction: column;
 
-    gap: 8px;
+    gap: 7px;
 
     margin-top: 25px;
 }
 
-.mobile-link {
+.mobile-links a {
     display: flex;
 
     align-items: center;
 
     gap: 15px;
 
-    padding: 14px 15px;
+    padding: 14px;
 
     border-radius: 11px;
 
-    color: #bdbdbd;
+    color: #a8a8a8;
 
     font-size: 14px;
 
-    font-weight: 500;
-
     transition:
-        0.25s ease;
+        .25s ease;
 }
 
-.mobile-link:hover,
-.mobile-link.active {
-    color: #ffffff;
+.mobile-links a span {
+    width: 24px;
 
-    background:
-        rgba(255, 45, 85, 0.1);
-
-    border:
-        1px solid rgba(255, 45, 85, 0.15);
-}
-
-.menu-symbol {
-    width: 25px;
+    text-align: center;
 
     color: #ff2d55;
 
     font-size: 17px;
-
-    text-align: center;
 }
 
-.mobile-menu-divider {
-    height: 1px;
+.mobile-links a:hover,
+.mobile-links a.active {
+    color: #ffffff;
 
     background:
-        rgba(255, 255, 255, 0.08);
+        rgba(255,45,85,.1);
 
-    margin: 25px 0;
+    border:
+        1px solid rgba(255,45,85,.15);
 }
 
-.mobile-menu-buttons {
-    display: flex;
+.mobile-divider {
+    height: 1px;
 
-    flex-direction: column;
+    margin:
+        25px 0;
 
-    gap: 10px;
+    background:
+        rgba(255,255,255,.08);
 }
 
 .mobile-invite,
 .mobile-support {
+    display: block;
+
     padding: 14px;
+
+    margin-top: 10px;
 
     text-align: center;
 
     border-radius: 10px;
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: 600;
 
     transition:
-        0.25s ease;
+        .25s ease;
 }
 
 .mobile-invite {
     background:
-        linear-gradient(
-            135deg,
-            #ff315b,
-            #e6003e
-        );
+        #ff2d55;
 
     box-shadow:
-        0 8px 25px rgba(255, 30, 70, 0.18);
+        0 8px 25px rgba(255,45,85,.18);
 }
 
 .mobile-support {
     background:
-        rgba(255, 255, 255, 0.06);
+        rgba(255,255,255,.055);
 
     border:
-        1px solid rgba(255, 255, 255, 0.08);
+        1px solid rgba(255,255,255,.08);
 }
 
 .mobile-invite:hover,
 .mobile-support:hover {
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 }
 
 .menu-overlay {
@@ -620,19 +602,20 @@ header {
 
     inset: 0;
 
-    background:
-        rgba(0, 0, 0, 0.6);
+    z-index: 10000;
 
-    backdrop-filter: blur(3px);
+    background:
+        rgba(0,0,0,.62);
+
+    backdrop-filter:
+        blur(3px);
 
     opacity: 0;
 
     visibility: hidden;
 
-    z-index: 10000;
-
     transition:
-        0.3s ease;
+        .3s ease;
 }
 
 .menu-overlay.show {
@@ -659,18 +642,12 @@ header {
 
     padding:
         135px 20px 100px;
-
-    position: relative;
 }
 
 .hero-content {
     width: 100%;
 
     max-width: 900px;
-
-    position: relative;
-
-    z-index: 2;
 }
 
 
@@ -686,28 +663,22 @@ header {
 
     gap: 9px;
 
-    padding: 8px 14px;
+    padding:
+        8px 14px;
 
     margin-bottom: 27px;
 
     border-radius: 100px;
 
     background:
-        rgba(255, 255, 255, 0.045);
+        rgba(255,255,255,.045);
 
     border:
-        1px solid rgba(255, 255, 255, 0.09);
+        1px solid rgba(255,255,255,.09);
 
-    color: #bdbdbd;
+    color: #999999;
 
-    font-size: 12px;
-
-    font-weight: 500;
-
-    backdrop-filter: blur(10px);
-
-    animation:
-        fadeUp 0.8s ease both;
+    font-size: 11px;
 }
 
 .status-dot {
@@ -719,29 +690,13 @@ header {
     background: #39ff88;
 
     box-shadow:
-        0 0 10px rgba(57, 255, 136, 0.8);
-
-    animation:
-        statusPulse 2s infinite;
-}
-
-@keyframes statusPulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.4;
-    }
-
+        0 0 10px rgba(57,255,136,.8);
 }
 
 
 
 /* ================================================= */
-/* HERO LOGO */
+/* HERO CUSTOM IMAGE */
 /* ================================================= */
 
 .hero-logo-wrapper {
@@ -757,9 +712,6 @@ header {
 
     align-items: center;
     justify-content: center;
-
-    animation:
-        fadeUp 0.9s ease both;
 }
 
 .logo-ring {
@@ -770,10 +722,10 @@ header {
     border-radius: 34px;
 
     border:
-        1px solid rgba(255, 45, 85, 0.28);
+        1px solid rgba(255,45,85,.3);
 
     box-shadow:
-        0 0 45px rgba(255, 45, 85, 0.12);
+        0 0 45px rgba(255,45,85,.14);
 
     animation:
         ringPulse 3s ease-in-out infinite;
@@ -787,14 +739,13 @@ header {
 
     border-radius: 30px;
 
-    border:
-        2px solid rgba(255, 45, 85, 0.55);
+    background: #111111;
 
-    background:
-        #111111;
+    border:
+        2px solid rgba(255,45,85,.55);
 
     box-shadow:
-        0 0 45px rgba(255, 45, 85, 0.22);
+        0 0 45px rgba(255,45,85,.22);
 
     animation:
         logoFloat 4s ease-in-out infinite;
@@ -804,11 +755,13 @@ header {
 
     0%,
     100% {
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 
     50% {
-        transform: translateY(-8px);
+        transform:
+            translateY(-8px);
     }
 
 }
@@ -817,13 +770,15 @@ header {
 
     0%,
     100% {
-        transform: scale(1);
+        transform:
+            scale(1);
 
-        opacity: 0.7;
+        opacity: .7;
     }
 
     50% {
-        transform: scale(1.06);
+        transform:
+            scale(1.06);
 
         opacity: 1;
     }
@@ -837,7 +792,8 @@ header {
 /* ================================================= */
 
 .hero h1 {
-    font-size: clamp(42px, 6vw, 68px);
+    font-size:
+        clamp(42px,6vw,68px);
 
     line-height: 1.08;
 
@@ -846,16 +802,13 @@ header {
     font-weight: 800;
 
     margin-bottom: 24px;
-
-    animation:
-        fadeUp 0.95s ease both;
 }
 
 .hero h1 span {
     color: #ff2d55;
 
     text-shadow:
-        0 0 35px rgba(255, 45, 85, 0.16);
+        0 0 35px rgba(255,45,85,.16);
 }
 
 
@@ -869,20 +822,15 @@ header {
 
     margin: auto;
 
-    color: #bcbcbc;
+    color: #aaa;
 
     font-size: 16px;
 
     line-height: 1.85;
-
-    animation:
-        fadeUp 1s ease both;
 }
 
 .hero-description strong {
     color: #ffffff;
-
-    font-weight: 600;
 }
 
 
@@ -894,17 +842,15 @@ header {
 .hero-buttons {
     display: flex;
 
-    align-items: center;
     justify-content: center;
+
+    align-items: center;
 
     gap: 14px;
 
     flex-wrap: wrap;
 
     margin-top: 34px;
-
-    animation:
-        fadeUp 1.05s ease both;
 }
 
 .hero-btn {
@@ -916,14 +862,15 @@ header {
 
     gap: 13px;
 
-    padding: 13px 16px;
+    padding:
+        13px 16px;
 
     border-radius: 12px;
 
     text-align: left;
 
     transition:
-        0.3s ease;
+        .3s ease;
 }
 
 .button-icon {
@@ -938,7 +885,7 @@ header {
     border-radius: 10px;
 
     background:
-        rgba(255, 255, 255, 0.09);
+        rgba(255,255,255,.09);
 
     font-size: 18px;
 }
@@ -956,27 +903,19 @@ header {
 }
 
 .button-text small {
-    color: rgba(255, 255, 255, 0.55);
+    color:
+        rgba(255,255,255,.55);
 
     font-size: 10px;
 
     font-weight: 400;
-
-    margin-bottom: 1px;
 }
 
 .button-arrow {
     font-size: 20px;
 
-    color: rgba(255, 255, 255, 0.65);
-
-    transition:
-        transform 0.3s ease;
-}
-
-.hero-btn:hover .button-arrow {
-    transform:
-        translateX(4px);
+    color:
+        rgba(255,255,255,.6);
 }
 
 .invite-btn {
@@ -984,44 +923,37 @@ header {
         linear-gradient(
             135deg,
             #ff315b,
-            #e90040
+            #e80040
         );
 
-    border:
-        1px solid rgba(255, 255, 255, 0.1);
-
     box-shadow:
-        0 12px 35px rgba(255, 30, 70, 0.2);
-}
-
-.invite-btn:hover {
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 16px 40px rgba(255, 30, 70, 0.32);
+        0 12px 35px rgba(255,30,70,.2);
 }
 
 .support-btn {
     background:
-        rgba(255, 255, 255, 0.055);
+        rgba(255,255,255,.055);
 
     border:
-        1px solid rgba(255, 255, 255, 0.1);
+        1px solid rgba(255,255,255,.1);
 
     backdrop-filter:
         blur(12px);
 }
 
-.support-btn:hover {
+.hero-btn:hover {
     transform:
         translateY(-4px);
+}
 
+.invite-btn:hover {
+    box-shadow:
+        0 16px 40px rgba(255,30,70,.32);
+}
+
+.support-btn:hover {
     background:
-        rgba(255, 255, 255, 0.09);
-
-    border-color:
-        rgba(255, 255, 255, 0.16);
+        rgba(255,255,255,.09);
 }
 
 
@@ -1033,19 +965,16 @@ header {
 .hero-trust {
     display: flex;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     gap: 9px;
 
     margin-top: 27px;
 
-    color: #777777;
+    color: #666;
 
     font-size: 11px;
-
-    animation:
-        fadeUp 1.15s ease both;
 }
 
 .hero-trust span {
@@ -1063,13 +992,13 @@ header {
         30px 20px;
 
     border-top:
-        1px solid rgba(255, 255, 255, 0.06);
+        1px solid rgba(255,255,255,.06);
 
     border-bottom:
-        1px solid rgba(255, 255, 255, 0.06);
+        1px solid rgba(255,255,255,.06);
 
     background:
-        rgba(10, 10, 10, 0.55);
+        rgba(10,10,10,.55);
 
     backdrop-filter:
         blur(12px);
@@ -1083,6 +1012,7 @@ header {
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 }
 
@@ -1094,31 +1024,26 @@ header {
     align-items: center;
 
     gap: 4px;
-
-    min-width: 120px;
 }
 
 .stat strong {
-    color: #ffffff;
-
     font-size: 19px;
 
     font-weight: 700;
 }
 
 .stat span {
-    color: #777777;
+    color: #707070;
 
     font-size: 11px;
 }
 
 .stat-divider {
     width: 1px;
-
     height: 35px;
 
     background:
-        rgba(255, 255, 255, 0.09);
+        rgba(255,255,255,.09);
 }
 
 
@@ -1133,12 +1058,12 @@ header {
 }
 
 .section-heading {
-    text-align: center;
-
     max-width: 700px;
 
     margin:
         0 auto 55px;
+
+    text-align: center;
 }
 
 .section-label {
@@ -1157,17 +1082,15 @@ header {
 
 .section-heading h2 {
     font-size:
-        clamp(30px, 4vw, 43px);
-
-    line-height: 1.15;
-
-    margin-bottom: 15px;
+        clamp(30px,4vw,43px);
 
     letter-spacing: -1px;
+
+    margin-bottom: 15px;
 }
 
 .section-heading p {
-    color: #858585;
+    color: #777;
 
     font-size: 14px;
 
@@ -1188,10 +1111,7 @@ header {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
+        repeat(3,1fr);
 
     gap: 22px;
 }
@@ -1211,67 +1131,18 @@ header {
     background:
         linear-gradient(
             145deg,
-            rgba(28, 28, 28, 0.78),
-            rgba(15, 15, 15, 0.72)
+            rgba(28,28,28,.78),
+            rgba(15,15,15,.72)
         );
 
     border:
-        1px solid rgba(255, 255, 255, 0.075);
+        1px solid rgba(255,255,255,.075);
 
     backdrop-filter:
         blur(16px);
 
     transition:
-        0.4s cubic-bezier(.2, .8, .2, 1);
-}
-
-.card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            #ff2d55,
-            transparent
-        );
-
-    opacity: 0;
-
-    transition:
-        0.4s ease;
-}
-
-.card::after {
-    content: "";
-
-    position: absolute;
-
-    width: 160px;
-    height: 160px;
-
-    top: -100px;
-    right: -100px;
-
-    border-radius: 50%;
-
-    background:
-        rgba(255, 45, 85, 0.13);
-
-    filter: blur(45px);
-
-    opacity: 0;
-
-    transition:
-        0.4s ease;
+        .4s ease;
 }
 
 .card:hover {
@@ -1279,22 +1150,11 @@ header {
         translateY(-9px);
 
     border-color:
-        rgba(255, 45, 85, 0.32);
+        rgba(255,45,85,.35);
 
     box-shadow:
-        0 20px 55px rgba(0, 0, 0, 0.35);
+        0 20px 55px rgba(0,0,0,.35);
 }
-
-.card:hover::before,
-.card:hover::after {
-    opacity: 1;
-}
-
-
-
-/* ================================================= */
-/* CARD ICON */
-/* ================================================= */
 
 .card-icon {
     width: 65px;
@@ -1310,10 +1170,10 @@ header {
     border-radius: 15px;
 
     background:
-        rgba(255, 255, 255, 0.045);
+        rgba(255,255,255,.045);
 
     border:
-        1px solid rgba(255, 255, 255, 0.06);
+        1px solid rgba(255,255,255,.06);
 }
 
 .feature-icon {
@@ -1324,8 +1184,6 @@ header {
     max-height: 48px;
 
     object-fit: contain;
-
-    display: block;
 }
 
 .card-number {
@@ -1335,25 +1193,21 @@ header {
     right: 27px;
 
     color:
-        rgba(255, 255, 255, 0.12);
+        rgba(255,255,255,.12);
 
     font-size: 12px;
 
     font-weight: 700;
-
-    letter-spacing: 1px;
 }
 
 .card h3 {
-    color: #ffffff;
-
     font-size: 20px;
 
     margin-bottom: 11px;
 }
 
 .card p {
-    color: #898989;
+    color: #858585;
 
     font-size: 13px;
 
@@ -1368,15 +1222,6 @@ header {
     font-size: 12px;
 
     font-weight: 600;
-
-    transition:
-        0.25s ease;
-}
-
-.card > a:hover {
-    color: #ff6684;
-
-    letter-spacing: 0.2px;
 }
 
 
@@ -1395,12 +1240,12 @@ header {
 
     margin: auto;
 
+    padding:
+        75px 30px;
+
     position: relative;
 
     overflow: hidden;
-
-    padding:
-        75px 30px;
 
     text-align: center;
 
@@ -1409,15 +1254,15 @@ header {
     background:
         linear-gradient(
             145deg,
-            rgba(35, 15, 20, 0.82),
-            rgba(18, 18, 18, 0.82)
+            rgba(35,15,20,.82),
+            rgba(18,18,18,.82)
         );
 
     border:
-        1px solid rgba(255, 45, 85, 0.16);
+        1px solid rgba(255,45,85,.16);
 
     box-shadow:
-        0 25px 80px rgba(0, 0, 0, 0.28);
+        0 25px 80px rgba(0,0,0,.28);
 }
 
 .cta-box::before {
@@ -1430,41 +1275,16 @@ header {
     background:
         radial-gradient(
             circle at 50% 0%,
-            rgba(255, 45, 85, 0.18),
+            rgba(255,45,85,.18),
             transparent 45%
         );
-
-    pointer-events: none;
-}
-
-.cta-glow {
-    position: absolute;
-
-    width: 300px;
-    height: 300px;
-
-    left: 50%;
-    top: -250px;
-
-    transform:
-        translateX(-50%);
-
-    background:
-        #ff2d55;
-
-    filter:
-        blur(120px);
-
-    opacity: 0.13;
 }
 
 .cta-box h2 {
     position: relative;
 
     font-size:
-        clamp(31px, 5vw, 50px);
-
-    letter-spacing: -1.3px;
+        clamp(31px,5vw,50px);
 
     margin-bottom: 12px;
 }
@@ -1476,7 +1296,7 @@ header {
 .cta-box p {
     position: relative;
 
-    color: #858585;
+    color: #777;
 
     font-size: 14px;
 
@@ -1489,8 +1309,6 @@ header {
     display: flex;
 
     justify-content: center;
-
-    align-items: center;
 
     gap: 12px;
 
@@ -1509,43 +1327,30 @@ header {
     font-weight: 600;
 
     transition:
-        0.3s ease;
+        .3s ease;
 }
 
 .cta-invite {
     background:
         #ff2d55;
-
-    box-shadow:
-        0 10px 30px rgba(255, 45, 85, 0.2);
 }
 
 .cta-invite span {
     margin-left: 8px;
 }
 
-.cta-invite:hover {
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 14px 35px rgba(255, 45, 85, 0.3);
-}
-
 .cta-support {
     background:
-        rgba(255, 255, 255, 0.055);
+        rgba(255,255,255,.055);
 
     border:
-        1px solid rgba(255, 255, 255, 0.09);
+        1px solid rgba(255,255,255,.09);
 }
 
+.cta-invite:hover,
 .cta-support:hover {
     transform:
         translateY(-3px);
-
-    background:
-        rgba(255, 255, 255, 0.09);
 }
 
 
@@ -1559,10 +1364,10 @@ footer {
         55px 7% 25px;
 
     background:
-        rgba(4, 4, 4, 0.94);
+        rgba(4,4,4,.94);
 
     border-top:
-        1px solid rgba(255, 255, 255, 0.07);
+        1px solid rgba(255,255,255,.07);
 }
 
 .footer-content {
@@ -1575,10 +1380,6 @@ footer {
     justify-content: space-between;
 
     gap: 50px;
-}
-
-.footer-brand {
-    max-width: 250px;
 }
 
 .footer-logo {
@@ -1594,11 +1395,9 @@ footer {
 }
 
 .footer-brand p {
-    color: #707070;
+    color: #666;
 
     font-size: 12px;
-
-    line-height: 1.7;
 }
 
 .footer-links {
@@ -1616,20 +1415,18 @@ footer {
 }
 
 .footer-links h4 {
-    color: #ffffff;
-
     font-size: 12px;
 
     margin-bottom: 5px;
 }
 
 .footer-links a {
-    color: #707070;
+    color: #666;
 
     font-size: 11px;
 
     transition:
-        0.25s ease;
+        .25s ease;
 }
 
 .footer-links a:hover {
@@ -1645,43 +1442,17 @@ footer {
     padding-top: 20px;
 
     border-top:
-        1px solid rgba(255, 255, 255, 0.06);
+        1px solid rgba(255,255,255,.06);
 
     display: flex;
 
     justify-content: space-between;
-
-    gap: 20px;
 }
 
 .footer-bottom p {
-    color: #555555;
+    color: #4f4f4f;
 
     font-size: 10px;
-}
-
-
-
-/* ================================================= */
-/* ANIMATIONS */
-/* ================================================= */
-
-@keyframes fadeUp {
-
-    from {
-        opacity: 0;
-
-        transform:
-            translateY(18px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform:
-            translateY(0);
-    }
-
 }
 
 
@@ -1702,10 +1473,7 @@ footer {
 
     .cards {
         grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+            repeat(2,1fr);
     }
 
     .footer-content {
@@ -1723,9 +1491,8 @@ footer {
 @media (max-width: 650px) {
 
     .navbar {
-        height: 68px;
-
         width: 92%;
+        height: 68px;
     }
 
     .logo {
@@ -1741,30 +1508,6 @@ footer {
             120px 18px 75px;
     }
 
-    .hero-badge {
-        font-size: 10px;
-
-        margin-bottom: 22px;
-    }
-
-    .hero-logo-wrapper {
-        width: 100px;
-        height: 100px;
-
-        margin-bottom: 25px;
-    }
-
-    .hero-logo {
-        width: 92px;
-        height: 92px;
-
-        border-radius: 25px;
-    }
-
-    .logo-ring {
-        border-radius: 29px;
-    }
-
     .hero h1 {
         font-size: 39px;
 
@@ -1773,26 +1516,16 @@ footer {
 
     .hero-description {
         font-size: 13px;
-
-        line-height: 1.75;
     }
 
     .hero-buttons {
         flex-direction: column;
-
-        width: 100%;
     }
 
     .hero-btn {
         width: 100%;
 
         max-width: 330px;
-
-        min-width: 0;
-    }
-
-    .hero-trust {
-        font-size: 9px;
     }
 
     .stats {
@@ -1804,10 +1537,7 @@ footer {
         display: grid;
 
         grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+            repeat(2,1fr);
 
         gap: 22px;
     }
@@ -1816,29 +1546,9 @@ footer {
         display: none;
     }
 
-    .stat strong {
-        font-size: 17px;
-    }
-
-    .stat span {
-        font-size: 10px;
-    }
-
     .features {
         padding:
             85px 18px;
-    }
-
-    .section-heading {
-        margin-bottom: 40px;
-    }
-
-    .section-heading h2 {
-        font-size: 30px;
-    }
-
-    .section-heading p {
-        font-size: 12px;
     }
 
     .cards {
@@ -1848,9 +1558,6 @@ footer {
 
     .card {
         min-height: auto;
-
-        padding:
-            30px 23px;
     }
 
     .cta {
@@ -1863,26 +1570,11 @@ footer {
             55px 20px;
     }
 
-    .cta-box h2 {
-        font-size: 31px;
-    }
-
-    .cta-box p {
-        font-size: 12px;
-    }
-
-    .footer-content {
-        gap: 35px;
-    }
-
     .footer-links {
         display: grid;
 
         grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+            repeat(2,1fr);
 
         gap: 35px;
     }
@@ -1891,6 +1583,10 @@ footer {
         flex-direction: column;
 
         gap: 7px;
+    }
+
+    .mobile-menu {
+        width: 300px;
     }
 
     .blob {
@@ -1912,10 +1608,6 @@ footer {
 
     .hero h1 {
         font-size: 34px;
-    }
-
-    .hero-btn {
-        max-width: 300px;
     }
 
     .mobile-menu {
