@@ -2,11 +2,11 @@ const ShadeMistConfig = {
 
     botName: "ShadeMist",
 
-    ownerPassword: "YOUR_PASSWORD",
+    ownerPassword: "d@rk123/",
 
     links: {
-        invite: "YOUR_INVITE_LINK",
-        support: "YOUR_SUPPORT_LINK"
+        invite: "https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot",
+        support: "https://discord.gg/4PsFesdqt"
     },
 
     images: {
