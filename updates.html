@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShadeMist | Updates</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+<div class="animated-bg">
+
+    <span class="blob blob-one"></span>
+    <span class="blob blob-two"></span>
+    <span class="blob blob-three"></span>
+
+</div>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Shade<span>Mist</span>
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="docs.html">
+                Bot Docs
+            </a>
+
+            <a href="commands.html">
+                Commands
+            </a>
+
+            <a href="updates.html" class="active">
+                Updates
+            </a>
+
+        </div>
+
+
+        <a
+            href="#"
+            id="navInvite"
+            class="nav-invite"
+        >
+            Invite Bot
+        </a>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
+
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="docs.html">
+            Bot Docs
+        </a>
+
+        <a href="commands.html">
+            Commands
+        </a>
+
+        <a href="updates.html">
+            Updates
+        </a>
+
+        <a href="privacy.html">
+            Privacy
+        </a>
+
+        <a href="terms.html">
+            Terms
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+<section class="docs-hero">
+
+    <div class="docs-hero-content">
+
+        <div class="docs-image-box">
+
+            <img
+                id="docsHeroImage"
+                src=""
+                alt="ShadeMist"
+                class="docs-custom-image"
+            >
+
+        </div>
+
+
+        <span class="section-label">
+            SHADEMIST NEWS
+        </span>
+
+
+        <h1>
+            Updates
+        </h1>
+
+
+        <p>
+            Follow the latest ShadeMist releases,
+            improvements and new features.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section
+    class="docs-section"
+    id="updates"
+>
+
+    <div class="docs-section-heading">
+
+        <span class="section-label">
+            CHANGELOG
+        </span>
+
+        <h2>
+            Latest Updates
+        </h2>
+
+        <p>
+            What's new in ShadeMist.
+        </p>
+
+    </div>
+
+
+    <div
+        class="updates-container"
+        id="updatesContainer"
+    ></div>
+
+</section>
+
+
+
+<!-- OWNER PANEL -->
+
+<section
+    class="docs-section admin-section"
+    id="admin"
+>
+
+    <div class="docs-section-heading">
+
+        <span class="section-label">
+            OWNER ACCESS
+        </span>
+
+        <h2>
+            Update Manager
+        </h2>
+
+        <p>
+            Authorized ShadeMist owners can publish updates.
+        </p>
+
+    </div>
+
+
+    <div
+        class="admin-login"
+        id="adminLoginBox"
+    >
+
+        <div
+            class="admin-icon"
+            data-emoji="owner"
+        ></div>
+
+
+        <h3>
+            Owner Authentication
+        </h3>
+
+
+        <p>
+            Enter the owner password to continue.
+        </p>
+
+
+        <div class="admin-input-row">
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Owner password"
+                autocomplete="off"
+            >
+
+
+            <button
+                id="adminLoginButton"
+                class="admin-button"
+            >
+                Login
+            </button>
+
+        </div>
+
+
+        <p
+            id="adminError"
+            class="admin-error"
+        ></p>
+
+    </div>
+
+
+
+    <div
+        class="admin-panel"
+        id="adminPanel"
+        style="display:none;"
+    >
+
+        <div class="admin-panel-header">
+
+            <div>
+
+                <span class="section-label">
+                    OWNER MODE
+                </span>
+
+                <h3>
+                    Publish Update
+                </h3>
+
+            </div>
+
+
+            <button
+                id="adminLogout"
+                class="admin-logout"
+            >
+                Logout
+            </button>
+
+        </div>
+
+
+        <div class="admin-box">
+
+            <h3>
+                New Update
+            </h3>
+
+            <p>
+                Publish a new update to ShadeMist.
+            </p>
+
+
+            <div class="admin-form">
+
+                <input
+                    type="text"
+                    id="updateTitle"
+                    placeholder="Update title"
+                >
+
+
+                <textarea
+                    id="updateDescription"
+                    rows="5"
+                    placeholder="Write your update..."
+                ></textarea>
+
+
+                <button
+                    id="addUpdateButton"
+                    class="admin-button"
+                >
+                    Publish Update
+                </button>
+
+            </div>
+
+
+            <div class="update-preview">
+
+                <span>
+                    PREVIEW
+                </span>
+
+                <h4 id="updatePreviewTitle">
+                    Update title
+                </h4>
+
+                <p id="updatePreviewDescription">
+                    Your update will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                Shade<span>Mist</span>
+            </div>
+
+            <p>
+                Powerful moderation. Premium experience.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <h4>
+                    Navigation
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="docs.html">
+                    Bot Docs
+                </a>
+
+                <a href="commands.html">
+                    Commands
+                </a>
+
+                <a href="updates.html">
+                    Updates
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Legal
+                </h4>
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms of Service
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 ShadeMist. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
