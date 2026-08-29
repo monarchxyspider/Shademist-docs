@@ -1,0 +1,25 @@
+{
+  "name": "shademist-docs-server",
+  "version": "1.0.0",
+  "description": "ShadeMist Discord Bot Documentation API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "shademist",
+    "discord",
+    "bot",
+    "docs",
+    "api"
+  ],
+  "author": "ShadeMist",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}
