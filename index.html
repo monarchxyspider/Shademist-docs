@@ -3,256 +3,966 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ShadeMist | Discord Bot</title>
+    <meta
+        name="description"
+        content="ShadeMist is an advanced Discord bot built to protect, manage and enhance your community."
+    >
 
-<link rel="stylesheet" href="style.css">
+    <title>ShadeMist | Discord Bot</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet"
->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link
-rel="icon"
-href="https://cdn.discordapp.com/embed/avatars/0.png"
->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="https://cdn.discordapp.com/embed/avatars/0.png"
+    >
 
 </head>
 
+
 <body>
 
-<!-- ================================= -->
+
+<!-- ================================================= -->
 <!-- ANIMATED BACKGROUND -->
-<!-- ================================= -->
+<!-- ================================================= -->
 
 <div class="animated-bg">
 
     <span class="blob blob-one"></span>
+
     <span class="blob blob-two"></span>
+
     <span class="blob blob-three"></span>
 
 </div>
 
 
-<!-- ================================= -->
+
+<!-- ================================================= -->
 <!-- HEADER -->
-<!-- ================================= -->
+<!-- ================================================= -->
 
 <header>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-<h2 class="logo">
-ShadeMist
-</h2>
 
-<div class="nav-links">
+        <!-- BRAND -->
 
-<a href="index.html">Home</a>
+        <a href="index.html" class="logo">
 
-<a href="privacy.html">Privacy</a>
+            Shade<span>Mist</span>
 
-<a href="terms.html">Terms</a>
+        </a>
 
-<a
-href="https://discord.gg/54vJcse3"
-target="_blank"
->
-Support
-</a>
 
-</div>
 
-</nav>
+        <!-- DESKTOP NAVIGATION -->
+
+        <div class="nav-links">
+
+            <a
+                href="index.html"
+                class="active"
+            >
+                Home
+            </a>
+
+            <a href="docs.html">
+                Bot Docs
+            </a>
+
+            <a href="commands.html">
+                Commands
+            </a>
+
+            <a href="updates.html">
+                Updates
+            </a>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="nav-right">
+
+
+            <!-- INVITE -->
+
+            <a
+                href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
+                class="nav-invite"
+            >
+
+                Invite Bot
+
+            </a>
+
+
+
+            <!-- HAMBURGER -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open Menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================================= -->
+    <!-- MOBILE MENU -->
+    <!-- ================================================= -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+
+        <div class="mobile-menu-header">
+
+            <span>
+                ShadeMist
+            </span>
+
+            <button
+                id="menuClose"
+                type="button"
+                aria-label="Close Menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+
+        <div class="mobile-menu-links">
+
+
+            <a
+                href="index.html"
+                class="mobile-link active"
+            >
+
+                <span class="menu-symbol">
+                    ⌂
+                </span>
+
+                Home
+
+            </a>
+
+
+
+            <a
+                href="docs.html"
+                class="mobile-link"
+            >
+
+                <span class="menu-symbol">
+                    ◈
+                </span>
+
+                Bot Docs
+
+            </a>
+
+
+
+            <a
+                href="commands.html"
+                class="mobile-link"
+            >
+
+                <span class="menu-symbol">
+                    ⌘
+                </span>
+
+                Commands
+
+            </a>
+
+
+
+            <a
+                href="updates.html"
+                class="mobile-link"
+            >
+
+                <span class="menu-symbol">
+                    ✦
+                </span>
+
+                Updates
+
+            </a>
+
+
+        </div>
+
+
+
+        <div class="mobile-menu-divider"></div>
+
+
+
+        <div class="mobile-menu-buttons">
+
+
+            <a
+                href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
+                class="mobile-invite"
+            >
+
+                Invite Bot
+
+            </a>
+
+
+
+            <a
+                href="https://discord.gg/54vJcse3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-support"
+            >
+
+                Support Server
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- MENU OVERLAY -->
+
+    <div
+        class="menu-overlay"
+        id="menuOverlay"
+    ></div>
 
 </header>
 
 
-<!-- ================================= -->
+
+<!-- ================================================= -->
 <!-- HERO -->
-<!-- ================================= -->
+<!-- ================================================= -->
+
+<main>
+
 
 <section class="hero">
 
-<div class="hero-content">
+
+    <div class="hero-content">
 
 
-<!-- BOT LOGO + TITLE -->
+        <!-- ONLINE BADGE -->
 
-<div class="hero-title">
+        <div class="hero-badge">
 
-<img
-src="https://cdn.discordapp.com/attachments/1482397391888842844/1538176762209374228/file_000000007a708207b73f9f0588790d1f.png?ex=6a81ba3e&is=6a8068be&hm=a61af467b7478c4b4b11722c280d5dd9618f5ceeabe28dfd8317ff3f437c6478&"
-alt="ShadeMist Bot Logo"
-class="hero-logo"
->
+            <span class="status-dot"></span>
 
-<h1>
-Powerful Moderation.
-<br>
-Premium Experience.
-</h1>
+            ShadeMist is online
 
-</div>
+        </div>
 
 
-<p>
 
-ShadeMist is an advanced Discord moderation bot
-built to protect, manage and enhance your community
-with speed, security and simplicity.
+        <!-- ================================================= -->
+        <!-- CUSTOM BOT IMAGE -->
+        <!-- ================================================= -->
 
-</p>
+        <!--
+            ==============================================
+            CUSTOM IMAGE PLACEHOLDER
+            ==============================================
+
+            Apni image ka URL neeche src="" mein lagana.
+
+            Example:
+
+            src="images/shademist.png"
+
+            Ya:
+
+            src="https://example.com/image.png"
+
+            ==============================================
+        -->
+
+        <div class="hero-logo-wrapper">
 
 
-<!-- BUTTONS -->
-
-<div class="buttons">
-
-<a
-class="btn red"
-href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
->
-
-Invite Bot
-
-</a>
+            <div class="logo-ring"></div>
 
 
-<a
-class="btn dark"
-href="https://discord.gg/54vJcse3"
->
 
-Support Server
+            <img
+                src="YOUR_CUSTOM_IMAGE_HERE.png"
+                alt="ShadeMist Bot Logo"
+                class="hero-logo"
+            >
 
-</a>
 
-</div>
+        </div>
 
-</div>
+
+
+        <!-- TITLE -->
+
+        <h1>
+
+            Powerful Moderation.
+
+            <br>
+
+            <span>
+                Premium Experience.
+            </span>
+
+        </h1>
+
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="hero-description">
+
+            ShadeMist is an advanced Discord moderation bot
+            built to protect, manage and enhance your community
+            with speed, security and simplicity.
+
+        </p>
+
+
+
+        <!-- ================================================= -->
+        <!-- HERO BUTTONS -->
+        <!-- ================================================= -->
+
+        <div class="hero-buttons">
+
+
+            <!-- INVITE BOT -->
+
+            <a
+                href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
+                class="hero-btn invite-btn"
+            >
+
+                <span class="button-icon">
+                    🤖
+                </span>
+
+                <span class="button-text">
+
+                    <small>
+                        Get started
+                    </small>
+
+                    Invite Bot
+
+                </span>
+
+                <span class="button-arrow">
+                    →
+                </span>
+
+            </a>
+
+
+
+            <!-- SUPPORT SERVER -->
+
+            <a
+                href="https://discord.gg/54vJcse3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hero-btn support-btn"
+            >
+
+                <span class="button-icon">
+                    💬
+                </span>
+
+                <span class="button-text">
+
+                    <small>
+                        Join our
+                    </small>
+
+                    Support Server
+
+                </span>
+
+                <span class="button-arrow">
+                    →
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TRUST -->
+
+        <div class="hero-trust">
+
+            <span>
+                ✦
+            </span>
+
+            Built for Discord communities
+
+            <span>
+                ✦
+            </span>
+
+        </div>
+
+
+    </div>
+
 
 </section>
 
 
-<!-- ================================= -->
+
+<!-- ================================================= -->
+<!-- STATS -->
+<!-- ================================================= -->
+
+<section class="stats">
+
+
+    <div class="stats-container">
+
+
+        <div class="stat">
+
+            <strong>
+                24/7
+            </strong>
+
+            <span>
+                Availability
+            </span>
+
+        </div>
+
+
+
+        <div class="stat-divider"></div>
+
+
+
+        <div class="stat">
+
+            <strong>
+                Fast
+            </strong>
+
+            <span>
+                Response Time
+            </span>
+
+        </div>
+
+
+
+        <div class="stat-divider"></div>
+
+
+
+        <div class="stat">
+
+            <strong>
+                Secure
+            </strong>
+
+            <span>
+                Moderation
+            </span>
+
+        </div>
+
+
+
+        <div class="stat-divider"></div>
+
+
+
+        <div class="stat">
+
+            <strong>
+                Slash
+            </strong>
+
+            <span>
+                Commands
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================================================= -->
 <!-- FEATURES -->
-<!-- ================================= -->
+<!-- ================================================= -->
 
 <section class="features">
 
-<h2>
-Why Choose ShadeMist?
-</h2>
+
+    <div class="section-heading">
 
 
-<div class="cards">
+        <span class="section-label">
+            POWERFUL FEATURES
+        </span>
 
 
-<!-- MODERATION -->
-
-<div class="card">
-
-<img
-src="https://cdn.discordapp.com/attachments/1486740937207054449/1532740345731879042/85232-twotoneshield-ids.png?ex=6a6df32f&is=6a6ca1af&hm=b14abfd5dc7a352864a070be60fe112a4a1633c03ffdc1dc1cd9dc1e0d4e5e4f&"
-class="feature-icon"
-alt="Advanced Moderation"
->
-
-<h3>
-Advanced Moderation
-</h3>
-
-<p>
-Kick, Ban, Timeout, Warn, Purge and many more
-powerful moderation tools.
-</p>
-
-</div>
+        <h2>
+            Everything your server needs.
+        </h2>
 
 
-<!-- PERFORMANCE -->
-
-<div class="card">
-
-<img
-src="https://cdn.discordapp.com/attachments/1482397391888842844/1537716821153550386/file_000000009854821195c006e231df7fea.png?ex=6a815f63&is=6a800de3&hm=71e16cfa5e334e538a41477a07eb7e2f9c6e3e9ccc47fd385438234f3b6a8abc&"
-class="feature-icon"
-alt="Fast Performance"
->
-
-<h3>
-Fast Performance
-</h3>
-
-<p>
-Built for speed with stable uptime and instant
-command responses.
-</p>
-
-</div>
+        <p>
+            Powerful tools designed to keep your community
+            safe, organized and enjoyable.
+        </p>
 
 
-<!-- SECURITY -->
-
-<div class="card">
-
-<img
-src="https://cdn.discordapp.com/attachments/1482397391888842844/1537716815331860490/eglock.png?ex=6a815f62&is=6a800de2&hm=c1a4ebfc807b1ca17a706af8707dc7c1d1d5d7df07940812d0b9569a4858f876&"
-class="feature-icon"
-alt="Maximum Security"
->
-
-<h3>
-Maximum Security
-</h3>
-
-<p>
-Protect your community with reliable moderation
-and upcoming Anti-Nuke systems.
-</p>
-
-</div>
+    </div>
 
 
-</div>
+
+    <!-- ================================================= -->
+    <!-- FEATURE CARDS -->
+    <!-- ================================================= -->
+
+    <div class="cards">
+
+
+        <!-- ============================================= -->
+        <!-- MODERATION -->
+        <!-- ============================================= -->
+
+        <div class="card">
+
+
+            <div class="card-icon">
+
+                <!-- OLD IMAGE — UNCHANGED -->
+
+                <img
+                    src="https://cdn.discordapp.com/attachments/1486740937207054449/1532740345731879042/85232-twotoneshield-ids.png?ex=6a6df32f&is=6a6ca1af&hm=b14abfd5dc7a352864a070be60fe112a4a1633c03ffdc1dc9dc1e0d4e5e4f&"
+                    class="feature-icon"
+                    alt="Advanced Moderation"
+                >
+
+            </div>
+
+
+            <div class="card-number">
+                01
+            </div>
+
+
+            <h3>
+                Advanced Moderation
+            </h3>
+
+
+            <p>
+                Kick, Ban, Timeout, Warn, Purge and many
+                more powerful moderation tools.
+            </p>
+
+
+            <a href="commands.html">
+                Explore Commands →
+            </a>
+
+
+        </div>
+
+
+
+        <!-- ============================================= -->
+        <!-- PERFORMANCE -->
+        <!-- ============================================= -->
+
+        <div class="card">
+
+
+            <div class="card-icon">
+
+                <!-- OLD IMAGE — UNCHANGED -->
+
+                <img
+                    src="https://cdn.discordapp.com/attachments/1482397391888842844/1537716821153550386/file_000000009854821195c006e231df7fea.png?ex=6a815f63&is=6a800de3&hm=71e16cfa5e334e538a41477a07eb7e2f9c6e3e9ccc47fd385438234f3b6a8abc&"
+                    class="feature-icon"
+                    alt="Fast Performance"
+                >
+
+            </div>
+
+
+            <div class="card-number">
+                02
+            </div>
+
+
+            <h3>
+                Fast Performance
+            </h3>
+
+
+            <p>
+                Built for speed with stable performance
+                and fast command responses.
+            </p>
+
+
+            <a href="docs.html">
+                Read Documentation →
+            </a>
+
+
+        </div>
+
+
+
+        <!-- ============================================= -->
+        <!-- SECURITY -->
+        <!-- ============================================= -->
+
+        <div class="card">
+
+
+            <div class="card-icon">
+
+                <!-- OLD IMAGE — UNCHANGED -->
+
+                <img
+                    src="https://cdn.discordapp.com/attachments/1482397391888842844/1537716815331860490/eglock.png?ex=6a815f62&is=6a800de3&hm=c1a4ebfc807b1ca17a706af8707dc7c1d1d5d7df07940812d0b9569a4858f876&"
+                    class="feature-icon"
+                    alt="Maximum Security"
+                >
+
+            </div>
+
+
+            <div class="card-number">
+                03
+            </div>
+
+
+            <h3>
+                Maximum Security
+            </h3>
+
+
+            <p>
+                Protect your community with reliable
+                moderation and upcoming Anti-Nuke systems.
+            </p>
+
+
+            <a href="docs.html">
+                Learn More →
+            </a>
+
+
+        </div>
+
+
+    </div>
+
 
 </section>
 
 
-<!-- ================================= -->
+
+<!-- ================================================= -->
+<!-- CALL TO ACTION -->
+<!-- ================================================= -->
+
+<section class="cta">
+
+
+    <div class="cta-box">
+
+
+        <div class="cta-glow"></div>
+
+
+        <span class="section-label">
+            READY TO UPGRADE?
+        </span>
+
+
+        <h2>
+
+            Give your server
+
+            <span>
+                ShadeMist.
+            </span>
+
+        </h2>
+
+
+        <p>
+            Powerful tools. Clean experience.
+            Better moderation.
+        </p>
+
+
+
+        <div class="cta-buttons">
+
+
+            <a
+                href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
+                class="cta-invite"
+            >
+
+                Invite Bot
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="https://discord.gg/54vJcse3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cta-support"
+            >
+
+                Support Server
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================================================= -->
 <!-- FOOTER -->
-<!-- ================================= -->
+<!-- ================================================= -->
 
 <footer>
 
-<p>
-© 2026 ShadeMist. All Rights Reserved.
-</p>
 
-<br>
+    <div class="footer-content">
 
-<p>
 
-<a href="privacy.html">
-Privacy Policy
-</a>
+        <!-- BRAND -->
 
-&nbsp; | &nbsp;
+        <div class="footer-brand">
 
-<a href="terms.html">
-Terms of Service
-</a>
 
-</p>
+            <div class="footer-logo">
+
+                Shade<span>Mist</span>
+
+            </div>
+
+
+            <p>
+                Powerful moderation.
+                Premium experience.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LINKS -->
+
+        <div class="footer-links">
+
+
+            <!-- NAVIGATION -->
+
+            <div>
+
+                <h4>
+                    Navigation
+                </h4>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="docs.html">
+                    Bot Docs
+                </a>
+
+
+                <a href="commands.html">
+                    Commands
+                </a>
+
+
+                <a href="updates.html">
+                    Updates
+                </a>
+
+            </div>
+
+
+
+            <!-- COMMUNITY -->
+
+            <div>
+
+                <h4>
+                    Community
+                </h4>
+
+
+                <a
+                    href="https://discord.gg/54vJcse3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Support Server
+                </a>
+
+
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot+applications.commands"
+                >
+                    Invite Bot
+                </a>
+
+            </div>
+
+
+
+            <!-- LEGAL -->
+
+            <div>
+
+                <h4>
+                    Legal
+                </h4>
+
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+
+                <a href="terms.html">
+                    Terms of Service
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+
+        <p>
+            © 2026 ShadeMist. All Rights Reserved.
+        </p>
+
+
+        <p>
+            Made for Discord communities.
+        </p>
+
+
+    </div>
+
 
 </footer>
+
+
+
+<!-- ================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================================= -->
+
+<script src="script.js"></script>
 
 
 </body>
