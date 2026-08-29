@@ -2,7 +2,7 @@ const ShadeMistConfig = {
 
     botName: "ShadeMist",
 
-    ownerPassword: "d@rk123/",
+    ownerPassword: "",
 
     links: {
         invite: "https://discord.com/oauth2/authorize?client_id=1481550443149529270&permissions=8&integration_type=0&scope=bot",
